@@ -5,7 +5,7 @@ sub="toko"
 domen="dotaja.my.id"
 ipena=$(curl -s ifconfig.me)
 
-curl -X PUT "https://api.cloudflare.com/client/v4/zones/1479d9655befa35f9ad174401cf1ae2c/dns_records" \
+curl -X POST "https://api.cloudflare.com/client/v4/zones/1479d9655befa35f9ad174401cf1ae2c/dns_records" \
      -H "X-Auth-Email: $imel" \
      -H "X-Auth-Key: $key" \
      -H "Content-Type: application/json" \
