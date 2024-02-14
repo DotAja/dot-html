@@ -3,6 +3,7 @@ apt update
 apt upgrade -y
 apt install apache2 -y
 apt install certbot -y
+apt-get install certbot python3-certbot-apache -y
 chown -R www-data:www-data /var/www/html
 chmod -R 755 /var/www/html
 wget "https://github.com/DotAja/dot-html/raw/main/htmlku.zip" -O /tmp/file.zip
