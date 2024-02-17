@@ -17,4 +17,4 @@ curl -X POST "https://api.cloudflare.com/client/v4/zones/$zone/dns_records" \
      -H "Content-Type: application/json" \
      --data '{"type":"A","name":"'$sub'","content":"'$ipena'","ttl":1,"proxied":false}'
 
-certbot --apache --domain $sub.$domen
+sudo certbot certonly --non-interactive --agree-tos -d $sub.$domen
